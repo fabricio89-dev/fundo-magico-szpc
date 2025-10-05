@@ -1,0 +1,116 @@
+body {
+  background: #0f131a;
+  background-size: cover;
+  color: #ffffff;
+  background: url(../images/bg.JPG);
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.4; /* Espaçamento entre linhas */
+  padding: 32px 24px; /*32px horizontal e 24px vertical*/
+}
+
+.header {
+  margin: 40px auto; /* Espaçamento acima e abaixo do cabeçalho, centralizado horizontalmente */
+  z-index: 99; /* Garante que o cabeçalho fique acima de outros elementos */
+  position: relative; /* Necessário para o z-index funcionar */
+  max-width: 700px; /* Largura máxima do cabeçalho */
+}
+
+.header h1 {
+  margin-bottom: 16px; /* Espaçamento abaixo do título */
+  font-size: 48px;
+  text-align: center;
+}
+
+.header .subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 19px;
+}
+
+.container {
+  max-width: 1024px; /* Largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner */
+  z-index: 99; /* Garante que o contêiner fique acima de outros elementos */
+  position: relative; /* Necessário para o z-index funcionar */
+}
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px; /* Bordas arredondadas */
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.card-header {
+  margin-bottom: 32px; /* Espaçamento abaixo do cabeçalho do card */
+  padding: 16px;
+  font-size: 21px;
+  text-align: center;
+}
+
+.form-group textarea {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  width: 100%; /* Largura total do contêiner pai */
+  min-height: 120px; /* Altura mínima */
+  padding: 16px;
+  border: 1px solid #474646;
+  border-radius: 8px; /* Bordas arredondadas */
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.form-group textarea:focus {
+  outline: none; /* Remove a borda padrão do foco */
+  border-color: #a655f7;
+}
+
+.form-group textarea::placeholder {
+  color: #a19e9e;
+}
+
+.form-group .btn-magic {
+  width: 100%;
+  padding: 16px 32px;
+  background: linear-gradient(90deg, #a655f7 0%, #ff80aa 100%);
+  color: #ffffff;
+  border: none; /* Remove a borda padrão */
+  border-radius: 8px; /* Bordas arredondadas */
+  font-size: 18px;
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  transition: all 0.3s ease; /* Transição suave para hover */
+}
+
+.form-group .btn-magic:hover {
+  transform: translateY(-2px); /* Leve elevação ao passar o mouse */
+}
+
+.preview-card {
+  display: none; /* Inicialmente oculto */
+}
+
+.code-grid {
+  display: flex;
+  gap: 24px; /* Espaçamento entre os cards */
+}
+.code-card {
+  background-color: #21242a;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px; /* Bordas arredondadas */
+  padding: 24px;
+  width: 50%;
+}
+
+.code-title {
+  font-size: 20px;
+  margin-bottom: 16px; /* Espaçamento abaixo do título */
+}
+
+.code-block {
+  background-color: #0a0c10;
+  color: #5eead4;
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 16px; /* Espaçamento interno */
+  font-size: 14px;
+  white-space: pre-wrap; /* Permite quebra de linha */
+  word-break: break-all; /* Quebra palavras longas */
+}
