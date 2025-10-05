@@ -16,7 +16,7 @@ function setLoading(isLoading) {
   const btnSpan = document.getElementById("generate-btn");
 
   if (isLoading) {
-    btnSpan.innerHTML = "Gerando Backgroud...";
+    btnSpan.innerHTML = "Gerando Background...";
   } else {
     btnSpan.innerHTML = "Gerar Background Mágico";
   }
@@ -84,3 +84,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
